@@ -1,6 +1,6 @@
-# 🤖 AI Prompt Generator
+# AI Prompt Generator
 
-> Transform your project ideas into comprehensive, AI-ready prompts for superior code generation
+> Transform project ideas into comprehensive, AI-ready prompts for code generation
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -12,25 +12,25 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
-**AI Prompt Generator** is a sophisticated web application that bridges the gap between project ideas and production-ready code. Built with Next.js and powered by Anthropic's Claude API, it generates meticulously crafted prompts that guide AI systems to produce high-quality, well-structured code tailored to your exact specifications.
+AI Prompt Generator is a web application that helps developers create structured prompts for AI-powered code generation. Built with Next.js and powered by Anthropic's Claude API, it generates detailed prompts that specify programming languages, frameworks, complexity levels, and coding styles.
 
-### ✨ Key Features
+### Key Features
 
-- **🎨 Matrix-Themed UI**: Immersive cyberpunk aesthetic with synchronized neon glow animations
-- **💡 Intelligent Idea Generator**: AI-powered project idea generation based on your interests and skill level
-- **🎯 Comprehensive Configuration**: Fine-tune every aspect of your code generation requirements
-- **⚡ Real-time Processing**: Instant prompt generation with visual loading indicators
-- **📋 One-Click Copy**: Seamlessly transfer generated prompts to your clipboard
-- **💾 Export Functionality**: Download prompts for offline use and documentation
-- **🔄 Adaptive Framework Selection**: Intelligent framework filtering based on chosen language
-- **🎨 Style Customization**: Choose between functional, OOP, procedural, or mixed coding paradigms
-- **📱 Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- Matrix-themed UI with synchronized neon glow animations
+- AI-powered project idea generation based on interests and skill level
+- Comprehensive configuration options for code generation requirements
+- Real-time prompt generation with loading indicators
+- One-click copy to clipboard functionality
+- Export prompts for offline use
+- Dynamic framework filtering based on selected programming language
+- Multiple coding style options (functional, OOP, procedural, mixed)
+- Fully responsive design for all devices
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Main Interface
 ![Main Interface](screenshots/main-interface.png)
@@ -43,30 +43,30 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **[Next.js 14](https://nextjs.org/)** - React framework with App Router
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
+- **[Lucide React](https://lucide.dev/)** - Icon library
 
 ### Backend & AI
-- **[Anthropic Claude API](https://www.anthropic.com/)** - Advanced language model for idea generation
+- **[Anthropic Claude API](https://www.anthropic.com/)** - Language model for idea generation
 - **Next.js API Routes** - Serverless backend functions
 
 ### Deployment
-- **[Vercel](https://vercel.com/)** - Optimized Next.js hosting platform
+- **[Vercel](https://vercel.com/)** - Next.js hosting platform
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- **Node.js** 18.17 or later
-- **npm** or **yarn** package manager
-- **Anthropic API Key** ([Get yours here](https://console.anthropic.com/))
+- Node.js 18.17 or later
+- npm or yarn package manager
+- Anthropic API Key ([Get yours here](https://console.anthropic.com/))
 
 ### Installation
 
@@ -103,7 +103,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai-prompt-generator/
@@ -133,54 +133,54 @@ ai-prompt-generator/
 
 ---
 
-## 🎮 Usage
+## Usage
 
 ### Generating a Project Idea
 
-1. **Expand the Idea Generator** section at the top of the page
-2. **Enter your interests** (optional) or leave blank for general ideas
-3. **Select your skill level**: Beginner, Intermediate, Advanced, or Expert
-4. **Choose a project type**: Web App, Mobile App, AI/ML, Game, etc.
-5. **Set time commitment**: Weekend, One Week, One Month, or Long-term
-6. **Click "Generate Project Ideas"** and wait for AI-powered suggestions
-7. **Review generated ideas** with tech stacks, learning outcomes, and difficulty levels
-8. **Click "Use This Idea"** to auto-fill the prompt configuration
+1. Expand the Idea Generator section at the top of the page
+2. Enter your interests (optional) or leave blank for general ideas
+3. Select your skill level: Beginner, Intermediate, Advanced, or Expert
+4. Choose a project type: Web App, Mobile App, AI/ML, Game, etc.
+5. Set time commitment: Weekend, One Week, One Month, or Long-term
+6. Click "Generate Project Ideas" and wait for results
+7. Review generated ideas with tech stacks, learning outcomes, and difficulty levels
+8. Click "Use This Idea" to auto-fill the prompt configuration
 
 ### Configuring Your Prompt
 
-1. **Describe your project** in the text area (required)
-2. **Select programming language**: Python, JavaScript, TypeScript, Java, C#, Go, Rust, PHP, Ruby, or Swift
-3. **Choose framework/library**: Options dynamically update based on selected language
-4. **Set complexity level**: Beginner, Intermediate, Advanced, or Expert
-5. **Expand Advanced Settings** for additional customization:
+1. Describe your project in the text area (required)
+2. Select programming language: Python, JavaScript, TypeScript, Java, C#, Go, Rust, PHP, Ruby, or Swift
+3. Choose framework/library: Options update dynamically based on selected language
+4. Set complexity level: Beginner, Intermediate, Advanced, or Expert
+5. Expand Advanced Settings for additional customization:
    - Code style (Functional, OOP, Procedural, Mixed)
    - Specific features and requirements
    - Technical constraints and limitations
    - Testing requirements
    - Documentation preferences
-6. **Click "Generate AI-Ready Prompt"** to create your comprehensive prompt
-7. **Copy or download** the generated prompt for use with AI coding assistants
+6. Click "Generate AI-Ready Prompt" to create your prompt
+7. Copy or download the generated prompt for use with AI coding assistants
 
 ---
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 ### Visual Design
-- **Matrix-inspired aesthetic** with synchronized neon green glow effects
-- **Smooth animations** and transitions for enhanced user experience
-- **Responsive layout** that adapts seamlessly to any screen size
-- **Accessibility-first** approach with proper ARIA labels and keyboard navigation
+- Matrix-inspired aesthetic with synchronized neon green glow effects
+- Smooth animations and transitions for better user experience
+- Responsive layout that adapts to any screen size
+- Accessibility considerations with proper ARIA labels and keyboard navigation
 
 ### Technical Design
-- **Component-based architecture** for maintainability and reusability
-- **Type safety** with TypeScript for reduced runtime errors
-- **Server-side rendering** for optimal performance and SEO
-- **API route separation** for clean backend logic
-- **Custom hooks** for shared stateful logic
+- Component-based architecture for maintainability and reusability
+- Type safety with TypeScript to reduce runtime errors
+- Server-side rendering for optimal performance and SEO
+- API route separation for clean backend logic
+- Custom hooks for shared stateful logic
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -208,38 +208,38 @@ ai-prompt-generator/
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
-1. **Push your code to GitHub**
-2. **Import project to Vercel**: [vercel.com/new](https://vercel.com/new)
-3. **Add environment variables** in Vercel dashboard
-4. **Deploy** - automatic deployments on every push
+1. Push your code to GitHub
+2. Import project to Vercel: [vercel.com/new](https://vercel.com/new)
+3. Add environment variables in Vercel dashboard
+4. Deploy - automatic deployments on every push
 
 ### Other Platforms
 
 This Next.js application can be deployed on:
-- **Netlify**
-- **AWS Amplify**
-- **Digital Ocean App Platform**
-- **Railway**
-- **Render**
+- Netlify
+- AWS Amplify
+- Digital Ocean App Platform
+- Railway
+- Render
 
 ---
 
-## 📊 Performance
+## Performance
 
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **First Contentful Paint**: < 1.5s
-- **Time to Interactive**: < 3.0s
-- **Total Bundle Size**: < 200KB (gzipped)
+- Lighthouse Score: 95+ (Performance, Accessibility, Best Practices, SEO)
+- First Contentful Paint: < 1.5s
+- Time to Interactive: < 3.0s
+- Total Bundle Size: < 200KB (gzipped)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome. Please feel free to submit a Pull Request.
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -249,13 +249,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Luca Buonanno**
 
@@ -265,29 +265,29 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **Anthropic** for the powerful Claude API
-- **Vercel** for exceptional hosting and deployment tools
-- **Next.js team** for the amazing framework
-- **Tailwind CSS** for the utility-first CSS framework
-
----
-
-## 📈 Roadmap
-
-- [ ] Add user authentication for saving prompt history
-- [ ] Implement prompt templates library
-- [ ] Add multi-language support (i18n)
-- [ ] Create browser extension for quick access
-- [ ] Integrate with GitHub Copilot and other AI coding assistants
-- [ ] Add collaboration features for team prompt building
-- [ ] Implement prompt versioning and comparison
-- [ ] Create API for programmatic prompt generation
+- Anthropic for the Claude API
+- Vercel for hosting and deployment tools
+- Next.js team for the framework
+- Tailwind CSS for the utility-first CSS framework
 
 ---
 
-## 💡 Use Cases
+## Roadmap
+
+- Add user authentication for saving prompt history
+- Implement prompt templates library
+- Add multi-language support (i18n)
+- Create browser extension for quick access
+- Integrate with GitHub Copilot and other AI coding assistants
+- Add collaboration features for team prompt building
+- Implement prompt versioning and comparison
+- Create API for programmatic prompt generation
+
+---
+
+## Use Cases
 
 - **Solo Developers**: Quickly scaffold new projects with AI-generated boilerplate
 - **Students**: Learn best practices by studying AI-generated project structures
@@ -297,7 +297,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🔒 Security
+## Security
 
 - API keys are stored securely in environment variables
 - No sensitive data is logged or stored client-side
@@ -306,9 +306,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
+## Support
 
-If you have any questions or run into issues, please:
+If you have any questions or run into issues:
 - Open an [issue](https://github.com/yourusername/ai-prompt-generator/issues)
 - Check the [documentation](#features)
 - Contact via [email](mailto:your.email@example.com)
@@ -317,10 +317,10 @@ If you have any questions or run into issues, please:
 
 <div align="center">
 
-**[⬆ Back to Top](#-ai-prompt-generator)**
+**[Back to Top](#ai-prompt-generator)**
 
-Made with ❤️ and ☕ by Luca Buonanno
+Made by Luca Buonanno
 
-**If you found this project helpful, please consider giving it a ⭐!**
+If you found this project helpful, please consider giving it a star.
 
 </div>
