@@ -8,7 +8,7 @@
 [![Anthropic Claude](https://img.shields.io/badge/Claude-API-orange?style=for-the-badge&logo=anthropic)](https://www.anthropic.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-[Live Demo](https://your-app-url.vercel.app) • [Getting Started](#getting-started)
+[Live Demo](https://ai-prompt-generator-orx4y999y-gianluca-buonanno-s-projects.vercel.app/) • [Getting Started](#getting-started)
 
 ---
 
@@ -294,10 +294,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[Back to Top](#ai-prompt-generator)**
-
 Made by Luca Buonanno
 
 If you found this project helpful, please consider giving it a star.
+
+**[Back to Top](#ai-prompt-generator)**
 
 </div>
