@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CRITICAL: Full screen coverage - MUST be at top! */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --matrix-green: #00ff41;
+  --matrix-green-bright: #39ff14;
+  --matrix-green-dark: #00cc33;
+  --matrix-bg: #000000;
+  --matrix-bg-light: #0a0a0a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: var(--matrix-green);
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--matrix-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--matrix-green-bright);
+}
+
+.matrix-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
+  transition: all 0.3s ease;
+}
+
+.matrix-card:hover {
+  border-color: rgba(0, 255, 65, 0.5);
+  box-shadow: 0 0 40px rgba(0, 255, 65, 0.15);
+}
+
+/* GLITCH EFFECT ON HOVER */
+.glitch-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.glitch-hover:hover {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch-hover::before,
+.glitch-hover::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.glitch-hover:hover::before {
+  animation: glitch-before 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  color: #00ff41;
+  z-index: -1;
+}
+
+.glitch-hover:hover::after {
+  animation: glitch-after 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  color: #00ff41;
+  z-index: -1;
+}
+
+@keyframes glitch-before {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-3px, 0);
+  }
+}
+
+@keyframes glitch-after {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(3px, 0);
+  }
+}
+
+/* NEON GLOW PULSE */
+.glow-pulse {
+  animation: glow-pulse-animation 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-animation {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.4),
+                0 0 40px rgba(0, 255, 65, 0.2),
+                inset 0 0 20px rgba(0, 255, 65, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.6),
+                0 0 60px rgba(0, 255, 65, 0.4),
+                inset 0 0 30px rgba(0, 255, 65, 0.2);
+  }
+}
+
+.glow-pulse-text {
+  animation: glow-pulse-text-animation 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-text-animation {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(0, 255, 65, 0.8),
+                 0 0 20px rgba(0, 255, 65, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 65, 1),
+                 0 0 40px rgba(0, 255, 65, 0.6),
+                 0 0 60px rgba(0, 255, 65, 0.3);
+  }
+}
+
+/* TOAST NOTIFICATION ANIMATIONS */
+.toast-slide-in {
+  animation: toast-slide-in 0.3s ease-out;
+}
+
+@keyframes toast-slide-in {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* EXISTING ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--matrix-green),
+               0 0 20px var(--matrix-green),
+               0 0 30px var(--matrix-green);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.glow-green-strong {
+  /* Static glow removed - selected-glow animation handles this */
+  /* This prevents conflicts with the animated glow */
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+::selection {
+  background: var(--matrix-green);
+  color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--matrix-green);
+  outline-offset: 2px;
+}
+
+/* LOADING BAR ANIMATION */
+.loading-bar {
+  animation: loading-bar-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-bar-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 65, 1);
+  }
+}
+
+/* ANIMATE TYPING DOTS */
+.animate-typing span {
+  animation: typing-dots 1.4s infinite;
+  opacity: 0;
+}
+
+.animate-typing span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animate-typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.animate-typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-dots {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* SLIDE IN ANIMATION */
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* PULSE GLOW FOR SELECTED BUTTONS - SYNCHRONIZED */
+.selected-glow {
+  animation: selected-glow-animation 2s ease-in-out infinite;
+  /* Key: Set animation to run from start time to keep all elements in sync */
+  animation-play-state: running;
+}
+
+/* Ensure all selected elements animate in perfect sync by starting at same point */
+@keyframes selected-glow-animation {
+  0% {
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.6),
+                0 0 30px rgba(0, 255, 65, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.9),
+                0 0 60px rgba(0, 255, 65, 0.6),
+                0 0 90px rgba(0, 255, 65, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.6),
+                0 0 30px rgba(0, 255, 65, 0.3);
+  }
+}
