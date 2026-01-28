@@ -8,7 +8,7 @@
 [![Anthropic Claude](https://img.shields.io/badge/Claude-API-orange?style=for-the-badge&logo=anthropic)](https://www.anthropic.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-[Live Demo](https://your-app-url.vercel.app) • [Documentation](#features) • [Getting Started](#getting-started)
+[Live Demo](https://your-app-url.vercel.app) • [Getting Started](#getting-started)
 
 ---
 
@@ -27,19 +27,6 @@ AI Prompt Generator is a web application that helps developers create structured
 - Dynamic framework filtering based on selected programming language
 - Multiple coding style options (functional, OOP, procedural, mixed)
 - Fully responsive design for all devices
-
----
-
-## Screenshots
-
-### Main Interface
-![Main Interface](screenshots/main-interface.png)
-
-### Idea Generator
-![Idea Generator](screenshots/idea-generator.png)
-
-### Generated Prompt
-![Generated Prompt](screenshots/generated-prompt.png)
 
 ---
 
@@ -260,8 +247,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Luca Buonanno**
 
 - GitHub: [@gianluca-buonanno](https://github.com/gianluca-buonanno)
-- LinkedIn: [Luca Buonanno](https://www.linkedin.com/in/luca-buonanno)
-- Portfolio: [your-portfolio-url.com](https://your-portfolio-url.com)
 
 ---
 
@@ -304,14 +289,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - HTTPS enforced in production
 - Regular dependency updates to patch vulnerabilities
 
----
-
-## Support
-
-If you have any questions or run into issues:
-- Open an [issue](https://github.com/yourusername/ai-prompt-generator/issues)
-- Check the [documentation](#features)
-- Contact via [email](mailto:your.email@example.com)
 
 ---
 
